@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ef">
+  <meta name="description" content="A little birthday universe made with love.">
+  <title>A Birthday Made Just for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to celebration</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to the beginning">a little birthday magic<span>✦</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#countdown">The countdown</a>
+      <a href="#wishes">Birthday wishes</a>
+      <a href="#envelopes">Little letters</a>
+      <a href="#finale">The finale</a>
+    </nav>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Play birthday music" aria-pressed="false">
+      <span class="music-icon" aria-hidden="true">♫</span><span class="music-label">Music</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="floating-decor decor-one" aria-hidden="true">✦</div>
+      <div class="floating-decor decor-two" aria-hidden="true">♡</div>
+      <div class="floating-decor decor-three" aria-hidden="true">✧</div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span>A day as lovely as you</p>
+        <h1 id="hero-title">Happy birthday,<br><span data-person-name>dear friend</span><span class="title-heart"> ♡</span></h1>
+        <p class="hero-message">Today is a little reminder of how much light you bring into the world. This tiny corner of the internet is all yours.</p>
+        <a class="button button-primary" href="#countdown">Let’s celebrate <span aria-hidden="true">✧</span></a>
+      </div>
+      <a class="scroll-cue" href="#countdown"><span>scroll for a little magic</span><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="countdown-section section-pad" id="countdown" aria-labelledby="countdown-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A little anticipation</p>
+        <h2 id="countdown-title">Your special day is getting closer <span>✦</span></h2>
+        <p id="countdown-message">Every second is one step closer to celebrating you.</p>
+      </div>
+      <div class="countdown-grid" aria-label="Time until the next birthday">
+        <div class="count-card reveal"><span class="count-value" id="count-days">—</span><span class="count-label">days</span></div>
+        <div class="count-card reveal"><span class="count-value" id="count-hours">—</span><span class="count-label">hours</span></div>
+        <div class="count-card reveal"><span class="count-value" id="count-minutes">—</span><span class="count-label">minutes</span></div>
+        <div class="count-card reveal"><span class="count-value" id="count-seconds">—</span><span class="count-label">seconds</span></div>
+      </div>
+      <div class="countdown-note"><span aria-hidden="true">♡</span> A whole new year of wonderful things is waiting for you.</div>
+    </section>
+
+    <section class="age-section section-pad" id="your-story" aria-labelledby="age-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Every chapter counts</p>
+        <h2 id="age-title">Every year makes you more special <span>♡</span></h2>
+        <p>A little celebration of all the time, joy, and stories that make you, you.</p>
+      </div>
+      <div class="age-feature reveal">
+        <span class="age-big-number" id="age-years">—</span>
+        <span class="age-big-label">beautiful years</span>
+        <span class="age-sub" id="age-months-days">and counting, every day</span>
+      </div>
+      <div class="age-grid">
+        <article class="age-card reveal"><span class="age-icon">☼</span><strong id="age-total-days">—</strong><span>days of being you</span></article>
+        <article class="age-card reveal"><span class="age-icon">✧</span><strong id="age-weeks">—</strong><span>weeks of wonder</span></article>
+        <article class="age-card reveal"><span class="age-icon">◷</span><strong id="age-hours">—</strong><span>hours of memories</span></article>
+      </div>
+    </section>
+
+    <section class="wishes-section section-pad" id="wishes" aria-labelledby="wishes-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A few things worth saying</p>
+        <h2 id="wishes-title">Little notes, just for you <span>✉</span></h2>
+        <p>Because one birthday wish could never hold all the good things we hope for you.</p>
+      </div>
+      <div class="wish-grid" id="wish-list"></div>
+    </section>
+
+    <section class="blessings-section section-pad" id="blessings" aria-labelledby="blessings-title">
+      <div class="blessing-stars" aria-hidden="true">✦　·　✧　　　·　✦　　　　✧　·</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">For all the days ahead</p>
+        <h2 id="blessings-title">May your future shine brighter than the stars <span>✧</span></h2>
+        <p>May the next chapter be gentle, joyful, and wonderfully yours.</p>
+      </div>
+      <div class="blessing-grid" id="blessing-list"></div>
+      <div class="blessing-stars blessing-stars-bottom" aria-hidden="true">·　✧　　　　✦　·　　　✧　　·</div>
+    </section>
+
+    <section class="goals-section section-pad" id="goals" aria-labelledby="goals-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A fresh page, a hundred possibilities</p>
+        <h2 id="goals-title">Your next chapter starts now! <span>↗</span></h2>
+        <p>Pick a few lovely intentions for the year ahead. You can change them whenever you like.</p>
+      </div>
+      <div class="goal-progress reveal">
+        <div class="progress-label"><span>Your little wins</span><span id="goal-progress-text">0 of 8</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Birthday goals completed" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0" id="goal-progress-bar"><span id="goal-progress-fill"></span></div>
+      </div>
+      <div class="goal-grid" id="goal-list"></div>
+      <p class="goal-closing reveal">No matter how the year unfolds, remember: you’re already doing beautifully. <span>♡</span></p>
+    </section>
+
+    <section class="envelopes-section section-pad" id="envelopes" aria-labelledby="envelopes-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Open whenever you need a smile</p>
+        <h2 id="envelopes-title">Five little envelopes, five special surprises <span>✉</span></h2>
+        <p>Each one is a small reminder of how loved you are.</p>
+      </div>
+      <div class="envelope-grid" id="envelope-list"></div>
+    </section>
+
+    <section class="secret-section section-pad" id="secret" aria-labelledby="secret-title">
+      <div class="secret-card reveal">
+        <div class="secret-lock" id="secret-lock" aria-hidden="true">♡</div>
+        <p class="eyebrow">Psst… there’s one more thing</p>
+        <h2 id="secret-title">Wait... there’s one more secret for you! <span>🤫</span></h2>
+        <p class="secret-intro">A little hidden note, tucked away just for you. Do you know the secret word?</p>
+        <form class="secret-form" id="secret-form">
+          <label class="sr-only" for="secret-password">Secret password</label>
+          <input id="secret-password" name="password" type="password" autocomplete="off" placeholder="Type the secret word…" required>
+          <button class="button button-primary" type="submit">Unlock <span aria-hidden="true">✧</span></button>
+        </form>
+        <p class="secret-feedback" id="secret-feedback" role="status" aria-live="polite"></p>
+        <div class="secret-reveal" id="secret-reveal" hidden aria-live="polite"></div>
+        <p class="privacy-note">A note about privacy: this password check runs in your browser, so it is a playful surprise—not real security. Anyone who can inspect the JavaScript can discover the password and message. Use server-side verification if the message needs genuine privacy.</p>
+      </div>
+    </section>
+
+    <section class="finale-section section-pad" id="finale" aria-labelledby="finale-title">
+      <div class="finale-sparkles" aria-hidden="true">✧　　　♡　　　　✦　　　✧</div>
+      <div class="cake" aria-hidden="true">
+        <span class="cake-candle candle-one"></span><span class="cake-candle candle-two"></span><span class="cake-candle candle-three"></span>
+        <span class="cake-flame flame-one"></span><span class="cake-flame flame-two"></span><span class="cake-flame flame-three"></span>
+        <span class="cake-top"></span><span class="cake-middle"></span><span class="cake-bottom"></span><span class="cake-plate"></span>
+      </div>
+      <p class="eyebrow">Save the biggest wish for last</p>
+      <h2 id="finale-title">Once again, happy birthday! <span>♡</span></h2>
+      <p class="finale-message">May you find joy in the little things, courage for the big things, and people who make every ordinary day feel a little brighter. May the year ahead bring you laughter that lingers, dreams that take shape, quiet moments of peace, and more love than you know what to do with. You deserve all of it—and so much more.</p>
+      <button class="button button-light" id="confetti-button" type="button">Make a wish <span aria-hidden="true">✦</span></button>
+      <p class="finale-signoff">The world is brighter with you in it.</p>
+    </section>
+  </main>
+  <footer class="site-footer">Crafted with love, just for you. <span>♡</span></footer>
+
+  <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="letter-title">
+    <div class="letter-paper">
+      <button class="dialog-close" type="button" aria-label="Close letter">×</button>
+      <span class="letter-seal" aria-hidden="true">♡</span>
+      <p class="eyebrow">A little letter for you</p>
+      <h2 id="letter-title">Just for you</h2>
+      <p class="letter-body" id="letter-body"></p>
+      <p class="letter-signoff">With all my love, <span>♡</span></p>
+    </div>
+  </dialog>
+  <audio id="background-music" preload="none" loop></audio>
+</body>
+</html>
